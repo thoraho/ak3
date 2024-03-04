@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+$darkBlue: #2A324B;
+$lightBlue: #58699D;
+$blueGrey: #E1E5EE;
+$white: #FFFFFF;
+$fontBold: 900;
+
+body {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $blueGrey;
+    height: 100dvh;
+}
+
+#container {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 500px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.menubutton {
+    text-decoration: none;
+    border: none;
+    background-color: $darkBlue;
+    color: $white;
+    padding: 1.5rem 4.5rem;
+    font-weight: $fontBold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.menubutton.active {
+    background-color: $white;
+    color: $darkBlue;
+}
+
+.menubutton.active:hover {
+    color: $darkBlue;
+}
+
+.menubutton:hover {
+    color: $lightBlue;
+}
+
+main {
+    display: flex;
+    text-align: start;
+    padding: 5rem;
+    background-color: $white;
+}
+
+main h2 {
+    color: $darkBlue;
+    margin: 0;
+}
+
+// main p {
+//     max-width: 90%;
+// }
+
+main ul {   
+    margin: 0;
+}
+
+main a {
+    color: $lightBlue;
+}
